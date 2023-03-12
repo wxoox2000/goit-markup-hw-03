@@ -48,11 +48,8 @@ ul {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
-}
-
-.wrapper {
-  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
@@ -67,9 +64,10 @@ header {
 
 .header-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 24px 15px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .site-nav {
@@ -80,7 +78,7 @@ header {
 }
 
 .logo {
-  margin-right: 36px;
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -111,6 +109,8 @@ header {
 
 .contacts {
   font-style: normal;
+
+  margin-left: auto;
 }
 
 .list .contacts-item {
@@ -147,19 +147,22 @@ header {
 
 /* Hero */
 
-.hero-container {
+/* .hero-container {
   padding-top: 68px;
   padding-bottom: 68px;
-}
+} */
 
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
   width: 496px;
-  padding-bottom: 48px;
-  margin: 0 auto;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
   font-weight: 700;
@@ -280,7 +283,7 @@ header {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 /* footer */
@@ -290,6 +293,9 @@ header {
 }
 
 .site-bottom {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
   background-color: #2e2f42;
 }
 
@@ -304,10 +310,7 @@ header {
 
 .bottom-content {
   width: 264px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-
-  text-align: start;
+ 
 }
 
 /* Portfolio.html */
@@ -316,6 +319,7 @@ header {
 
 .portfolio {
   padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 /* buttons */
@@ -325,7 +329,7 @@ header {
   justify-content: center;
   gap: 24px;
 
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .filtering {
@@ -366,9 +370,9 @@ header {
 }
 
 .examples-content {
-  text-align: start;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .examples > li {
